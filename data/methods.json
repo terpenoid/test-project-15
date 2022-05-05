@@ -1,0 +1,30 @@
+[
+  {
+    "provider": "Litnet",
+    "name": "Litnet Wallet",
+    "commission": 0,
+    "imageUrl": "litnet.png",
+    "payUrl": "/pay/wallet"
+  },
+  {
+    "provider": "Privat",
+    "name": "Visa / MasterCard",
+    "commission": 2.5,
+    "imageUrl": "visa-mc.png",
+    "payUrl": "/pay/123"
+  },
+  {
+    "provider": "Privat",
+    "name": "Privat24",
+    "commission": 2.5,
+    "imageUrl": "privat.png",
+    "payUrl": "/pay/123"
+  },
+  {
+    "provider": "IBOX",
+    "name": "IBOX",
+    "commission": 5,
+    "imageUrl": "ibox.png",
+    "payUrl": "/pay/456"
+  }
+]

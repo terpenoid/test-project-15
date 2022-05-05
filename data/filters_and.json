@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 5,
+    "filterType": "SimpleComparator",
+    "applyType": "include",
+    "conditions": [
+      {
+        "property": "name",
+        "operator": "=",
+        "data": "IBOX"
+      },
+      {
+        "property": "countryCode",
+        "operator": "in",
+        "data": ["UA", "KZ"]
+      }
+    ],
+    "conditionsGlue": "and"
+  },
+  {
+    "priority": 1,
+    "filterType": "SimpleComparator",
+    "applyType": "include",
+    "conditions": [
+      {
+        "property": "name",
+        "operator": "=",
+        "data": "Privat24"
+      },
+      {
+        "property": "countryCode",
+        "operator": "=",
+        "data": "UA"
+      }
+    ],
+    "conditionsGlue": "and"
+  }
+]

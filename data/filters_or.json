@@ -1,0 +1,38 @@
+[
+  {
+    "priority": 5,
+    "filterType": "SimpleComparator",
+    "applyType": "include",
+    "conditions": [
+      {
+        "property": "name",
+        "operator": "=",
+        "data": "IBOX"
+      },
+      {
+        "property": "name",
+        "operator": "=",
+        "data": "Privat24"
+      }
+    ],
+    "conditionsGlue": "or"
+  },
+  {
+    "priority": 1,
+    "filterType": "SimpleComparator",
+    "applyType": "include",
+    "conditions": [
+      {
+        "property": "commission",
+        "operator": ">",
+        "data": "2.5"
+      },
+      {
+        "property": "commission",
+        "operator": "<",
+        "data": "2.5"
+      }
+    ],
+    "conditionsGlue": "or"
+  }
+]

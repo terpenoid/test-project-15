@@ -1,0 +1,56 @@
+[
+  {
+    "priority": 10,
+    "filterType": "SimpleComparator",
+    "applyType": "exclude",
+    "conditions": [
+      {
+        "property": "name",
+        "operator": "=",
+        "data": "IBOX"
+      },
+      {
+        "property": "amount",
+        "operator": "<",
+        "data": "100"
+      }
+    ],
+    "conditionsGlue": "and"
+  },
+  {
+    "priority": 10,
+    "filterType": "SimpleComparator",
+    "applyType": "exclude",
+    "conditions": [
+      {
+        "property": "name",
+        "operator": "=",
+        "data": "Privat24"
+      },
+      {
+        "property": "countryCode",
+        "operator": "=",
+        "data": "KZ"
+      }
+    ],
+    "conditionsGlue": "and"
+  },
+  {
+    "priority": 1,
+    "filterType": "SimpleComparator",
+    "applyType": "include",
+    "conditions": [
+      {
+        "property": "provider",
+        "operator": "=",
+        "data": "Privat"
+      },
+      {
+        "property": "name",
+        "operator": "=",
+        "data": "IBOX"
+      }
+    ],
+    "conditionsGlue": "or"
+  }
+]

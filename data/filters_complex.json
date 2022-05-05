@@ -1,0 +1,92 @@
+[
+  {
+    "priority": 30,
+    "filterType": "SimpleComparator",
+    "applyType": "exclude",
+    "conditions": [
+      {
+        "property": "name",
+        "operator": "=",
+        "data": "Privat24"
+      }
+    ],
+    "conditionsGlue": "and"
+  },
+  {
+    "priority": 20,
+    "filterType": "SimpleComparator",
+    "applyType": "include",
+    "conditions": [
+      {
+        "property": "provider",
+        "operator": "=",
+        "data": "Privat"
+      },
+      {
+        "property": "amount",
+        "operator": "<",
+        "data": "100"
+      }
+    ],
+    "conditionsGlue": "and"
+  },
+  {
+    "priority": 10,
+    "filterType": "SimpleComparator",
+    "applyType": "include",
+    "conditions": [
+      {
+        "property": "name",
+        "operator": "=",
+        "data": "IBOX"
+      },
+      {
+        "property": "amount",
+        "operator": ">",
+        "data": "80"
+      }
+    ],
+    "conditionsGlue": "and"
+  },
+  {
+    "priority": 5,
+    "filterType": "SimpleComparator",
+    "applyType": "include",
+    "conditions": [
+      {
+        "property": "provider",
+        "operator": "=",
+        "data": "Litnet"
+      },
+      {
+        "property": "amount",
+        "operator": "<",
+        "data": "50"
+      },
+      {
+        "property": "countryCode",
+        "operator": "in",
+        "data": ["UA", "KZ"]
+      }
+    ],
+    "conditionsGlue": "and"
+  },
+  {
+    "priority": 1,
+    "filterType": "SimpleComparator",
+    "applyType": "include",
+    "conditions": [
+      {
+        "property": "commission",
+        "operator": ">",
+        "data": "2.5"
+      },
+      {
+        "property": "commission",
+        "operator": "<",
+        "data": "2.5"
+      }
+    ],
+    "conditionsGlue": "or"
+  }
+]
