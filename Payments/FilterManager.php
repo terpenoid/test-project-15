@@ -4,7 +4,7 @@ namespace Payments;
 
 class FilterManager
 {
-    public function processFilter(Request $request, JsonDataProvider $filterDataProvider, MethodList $methods): MethodList
+    public function processFilter(Request $request, DataProvider $filterDataProvider, MethodList $methods): MethodList
     {
         $filteredMethodList = new MethodList();
         $filterChain = new FilterChain();

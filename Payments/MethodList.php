@@ -12,7 +12,7 @@ class MethodList
     /**
      * @throws Exception
      */
-    public function __construct(JsonDataProvider $methodsDataProvide = null)
+    public function __construct(DataProvider $methodsDataProvide = null)
     {
         if (!is_null($methodsDataProvide)) {
             foreach ($methodsDataProvide->getData() as $method) {
